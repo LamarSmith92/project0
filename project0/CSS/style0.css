@@ -1,0 +1,14 @@
+body{
+  background-image: url("/Users/Lele/Desktop/Project0/mr-Spacely.jpg");
+  background-repeat: no-repeat;
+}
+.animate{
+    
+}
+#playerOne{
+display: none;
+}
+
+#playerTwo{
+  display: none;
+}
