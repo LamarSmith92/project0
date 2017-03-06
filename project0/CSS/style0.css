@@ -1,14 +1,117 @@
-body{
-  background-image: url("/Users/Lele/Desktop/Project0/mr-Spacely.jpg");
-  background-repeat: no-repeat;
-}
-.animate{
-    
-}
-#playerOne{
-display: none;
+body {
+    background-image: url("/Users/Lele/project0/project0/IMGS/326393.jpg");
+    background-repeat: repeat;
 }
 
-#playerTwo{
-  display: none;
+h1 {
+    color: green;
+    text-shadow: 2px 2px white;
+    text-align: center;
+    font-family: 'Baloo';
+    font-size: 56px;
+
+}
+
+#angryShark {
+    height: 115px;
+    width: 250px;
+    bottom: 10px;
+    position: sticky;
+    background: url(IMGS/angryShark.png) no-repeat;
+}
+
+#hungryShark {
+    height: 194px;
+    width: 194px;
+    left: 0;
+    bottom: 15px;
+    position: sticky;
+    background: url(IMGS/hungryShark.png) no-repeat;
+}
+
+#raceInfoContainer {
+    width: 50%;
+    margin: 40px auto 0;
+    background: rgba(0, 0, 0, 0.8);
+    height: 200px;
+}
+
+#raceInfoContainer h2 {
+    color: white;
+    text-transform: uppercase;
+    border-bottom: solid 1px;
+    padding: 20px 0;
+}
+
+.raceInfo {
+    font-size: 24px;
+    font-weight: bold;
+    color: blue;
+    width: 50%;
+    float: left;
+}
+
+
+.raceInfo2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: red;
+        width: 50%;
+        float: left;
+}
+
+.raceInfo span {
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+    color: red;
+}
+
+#raceInfo1 {
+    color: red;
+}
+
+#raceInfo2 {
+    color: blue;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#overlay{
+    	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.8;
+	z-index:1001;
+}
+
+#overlay-content{
+	position: absolute;
+	display: none;
+	width: 360px;
+	height: 90px;
+	padding: 16px;
+	border: 16px solid blue;
+	background-color: white;
+	z-index:1002;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
