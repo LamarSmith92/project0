@@ -16,11 +16,13 @@ $.fn.center = function () {
 $("#overlay").show();
 $("#overlay-content").show().center();
 
+//nice use of timer
 setTimeout(function(){
   $("#overlay").fadeOut();
 }, 10000);
 
-
+//hm, I think the order in which this function is called is a bit off
+//I like where you are going with it though
 function checkIfComplete() {
     if (isComplete === false) {
         isComplete = true;
@@ -90,11 +92,13 @@ function moveShark() {
 }
 
 
+//good - naming of vars could be better here, maybe use camelCase
 var Xpos = 0; //Sets starting position left/right
 var Ypos = 0; //Sets starting position up/down
 var spd = 300; //Milliseconds
 var dstnc = 60; //Pixels
 
+//good logic
 $(document).keydown(function(e) {
     if (e.keyCode == 87) { //W Up
         $('#hungryShark').animate({
